@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@metamask/sdk": "^0.31.4",
+    "ethers": "^6.13.4"
+  }
+}

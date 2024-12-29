@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gagamove - Admin Dashboard</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-brand">Gagamove</div>
+        <button class="nav-wallet" style="margin-right: -60%;" id="getOwner">
+            <img src="image/contract.png" alt="wallet" style="width: 24px; height: 24px;">
+            Connect smart contract
+        </button>
+        <button class="nav-wallet" id="connectWallet">
+            <img src="image/wallet.png" alt="wallet" style="width: 20px; height: 20px;">
+            Connect Wallet
+        </button>
+    </nav>
+
+    <div class="adminPage">
+        <div class="dashboard">
+            <div class="stat-card">
+                <h3>Total Deliveries</h3>
+                <p id="totalDeliveries">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Contract Balance</h3>
+                <p id="contractBalance">0 ETH</p>
+            </div>
+            <div class="stat-card">
+                <h3>Active Deliveries</h3>
+                <p id="activeDeliveries">0</p>
+            </div>
+        </div>
+
+        <div class="manage">
+            <div class="DeliveryManage">
+                <h2>Delivery Management</h2>
+                <div class="form-group">
+                    <label for="deliveryId">Delivery ID</label>
+                    <input type="number" id="deliveryId" placeholder="Enter delivery ID">
+                </div>
+                <div class="actions">
+                    <button id="viewDetailsBtn">View Details</button>
+                    <button id="startDeliveryBtn">Start Delivery</button>
+                    <button id="completeDeliveryBtn">Complete Delivery</button>
+                </div>
+        
+                <div id="deliveryDetails">
+                    <p><strong>Customer Address:</strong> <span id="userAddress-track"></span></p>
+                    <p><strong>From Address:</strong> <span id="fromLocation-track"></span></p>
+                    <p><strong>To Address:</strong> <span id="toLocation-track"></span></p>
+                    <p><strong>Amount Paid:</strong> <span id="price-track"></span></p>
+                    <p><strong>Status:</strong> <span id="status-track"></span></p>
+                </div>
+            </div>
+
+            <div class="recentDelivery">
+                <h2>Recent Deliveries</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>From</th>
+                            <th>To</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="deliveryTableBody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="manage">
+            <div class="DeliveryManage">
+                <h2>Financial Management</h2>
+                <button onclick="withdrawFunds()" class="danger">Withdraw Funds</button>
+                <div id="withdrawStatus"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.min.js"></script>
+    <script src="index.js" type="module"></script>
+    <script src="admin.js" type="module"></script>
+
+
+</body>
+
+</html>

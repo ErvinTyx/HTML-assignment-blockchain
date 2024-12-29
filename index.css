@@ -1,0 +1,226 @@
+:root {
+    --primary-color: rgb(60, 49, 23);
+    --secondary-color: #797976;
+    --accent-color: #22c55e;
+    --background-color: #f8fafc;
+    --card-background: #ffffff;
+    --text-color: #323222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.nav-wallet {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.bImage {
+    height: 60vh;
+    background: linear-gradient(rgba(222, 216, 194, 0.1), rgba(116, 95, 68, 0.5)),
+        url('image/home.png') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.mainContent {
+    max-width: 1200px;
+    margin: -50px auto;
+    padding: 0 1rem;
+}
+
+/* New styles for the sub-navigation */
+.sub-nav {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sub-nav button {
+    background: var(--background-color);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.sub-nav button.active {
+    background: var(--primary-color);
+    color: white;
+}
+
+.content-section {
+    display: none;
+    background: var(--card-background);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.content-section.active {
+    display: block;
+}
+
+/* Keep your existing class styles */
+.scheduleDetails,
+.orderDetails,
+.modifyDetails,
+.cancelDetails {
+    background: var(--card-background);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Rest of your existing CSS remains the same */
+.input {
+    margin-bottom: 1rem;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.input input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+    display: none;
+    /* Initially hidden */
+}
+
+#delivery-item {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 500000;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
+
+.highlight {
+    color: rebeccapurple;
+    font-weight: bold;
+}
+#delivery-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#delivery-item p, #delivery-item button, #delivery-item h1,#delivery input{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#delivery-item button{
+
+    color: white;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+#delivery-item h1{
+    text-align: center;
+}
