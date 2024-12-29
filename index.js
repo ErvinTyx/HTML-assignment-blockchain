@@ -208,7 +208,7 @@ async function scheduleDelivery() {
 
         try {
             // Call the smart contract function
-            const tx = await contract.scheduleDelivery(fromAddress, toAddress, price, difference, {
+            const tx = await contract.scheduleDelivery(fromAddress, toAddress, price, (difference + 28800), {
                 value: ethers.parseEther(document.getElementById("ETHprice").value)
             });
             const receipt = await tx.wait();
