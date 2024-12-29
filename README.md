@@ -43,19 +43,19 @@ Before you begin, ensure you have the following installed:
 
 ## **Set Up**
 1. Open metamask
-![Open Meta Mask](readme-img\openMetamask.png "Open Meta mask")
+![Open Meta Mask](https://github.com/ErvinTyx/HTML-assignment-blockchain/blob/9b303b514dabd49a52d147f38b4d6d9ee7f183ec/readme-img/openMetamask.png "Open Meta mask")
 
 2. Select Network
-![Selecting Network](readme-img\openNetwork.png "Selecting Network")
+![Selecting Network](https://github.com/ErvinTyx/HTML-assignment-blockchain/blob/9b303b514dabd49a52d147f38b4d6d9ee7f183ec/readme-img/openNetwork.png "Selecting Network")
 
 3. Turn On testnet
-![Turn On Testnet](readme-img\openTestNetwork.png "Turn on Testnet")
+![Turn On Testnet](https://github.com/ErvinTyx/HTML-assignment-blockchain/blob/9b303b514dabd49a52d147f38b4d6d9ee7f183ec/readme-img/openTestNetwork.png "Turn on Testnet")
 
 4. Add a custom network
-![Adding a custom network](readme-img\openTestNetwork.png "Adding a custom network")
+![Adding a custom network](https://github.com/ErvinTyx/HTML-assignment-blockchain/blob/main/readme-img/openTestNetwork.png "Adding a custom network")
 
 5. Fill in information
-![Fill in important information](readme-img\FillinNetwork.png "Fill in information")
+![Fill in important information](https://github.com/ErvinTyx/HTML-assignment-blockchain/blob/main/readme-img/FillinNetwork.png "Fill in information")
 
    - **Network Name**: Gochain Testnet
    - **UR;**:`http://127.0.0.1:8545`
@@ -66,7 +66,7 @@ Before you begin, ensure you have the following installed:
 > ## ⚠⚠⚠Warning Do not use real money in this wallet ⚠⚠⚠
 >The first wallet private key is defaulted to the contract owner address
 
-![account information](readme-img\anvil.png "you can see some private key import them")
+![account information](https://github.com/ErvinTyx/HTML-assignment-blockchain/blob/9b303b514dabd49a52d147f38b4d6d9ee7f183ec/readme-img/anvil.png "you can see some private key import them")
 
 
 7. Open Vsc and install Live Server
@@ -76,15 +76,15 @@ cd <to-project-directory-is-located>
 code .
 ```
 Open extension ctrl+shift+x or click 
-![Open Extension](readme-img\openExtensionVsc.png)
+![Open Extension](https://github.com/ErvinTyx/HTML-assignment-blockchain/blob/9b303b514dabd49a52d147f38b4d6d9ee7f183ec/readme-img/openExtensionVsc.png)
 
 
-![Search For Live Server](readme-img\vscSeachForLiveSever.png)
+![Search For Live Server](https://github.com/ErvinTyx/HTML-assignment-blockchain/blob/9b303b514dabd49a52d147f38b4d6d9ee7f183ec/readme-img/vscSeachForLiveSever.png)
 click install
 
 8. Run live Server
 alt+o or alt+l or click go live at bottom right or open index.html right click `Open with live server`
-![Click bottom right to run](readme-img\goLiveVsc.png)
+![Click bottom right to run](https://github.com/ErvinTyx/HTML-assignment-blockchain/blob/9b303b514dabd49a52d147f38b4d6d9ee7f183ec/readme-img/goLiveVsc.png)
 
 
 
